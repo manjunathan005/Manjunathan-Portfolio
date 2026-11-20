@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#05101a"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Matrix/Grid Lines -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.25">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="150" r="140" fill="#10b981" opacity="0.08" filter="blur(40px)"/>
+  <circle cx="650" cy="300" r="160" fill="#00f2fe" opacity="0.08" filter="blur(50px)"/>
+
+  <!-- Top App Window Bar -->
+  <rect x="25" y="20" width="750" height="460" rx="14" fill="#0c1222" stroke="#1e293b" stroke-width="1.5" filter="url(#shadow)"/>
+  <path d="M25 34 C25 26, 31 20, 39 20 L761 20 C769 20, 775 26, 775 34 L775 58 L25 58 Z" fill="#131b2e"/>
+  
+  <!-- Window Controls -->
+  <circle cx="48" cy="39" r="6" fill="#ef4444"/>
+  <circle cx="68" cy="39" r="6" fill="#f59e0b"/>
+  <circle cx="88" cy="39" r="6" fill="#10b981"/>
+
+  <!-- Address / Title Bar -->
+  <rect x="130" y="30" width="380" height="20" rx="6" fill="#0a0f1d" stroke="#334155" stroke-width="0.8"/>
+  <text x="145" y="44" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">https://cropcare-ai.platform/sih-2025/dashboard</text>
+  <rect x="700" y="30" width="55" height="18" rx="4" fill="#10b981" opacity="0.2"/>
+  <text x="727" y="43" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">LIVE</text>
+
+  <!-- App Header inside Dashboard -->
+  <g transform="translate(45, 75)">
+    <!-- App Logo & Title -->
+    <rect x="0" y="0" width="32" height="32" rx="8" fill="url(#primaryGrad)"/>
+    <text x="16" y="22" font-family="sans-serif" font-size="18" fill="#000" text-anchor="middle">🌱</text>
+    <text x="42" y="16" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#f8fafc">CropCare <tspan fill="#00f2fe">AI</tspan></text>
+    <text x="42" y="30" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Smart India Hackathon 2025 • Agricultural Intelligence</text>
+
+    <!-- Hackathon Badge -->
+    <rect x="575" y="2" width="130" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="590" cy="16" r="4" fill="#38bdf8"/>
+    <text x="602" y="20" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#38bdf8">SIH 2025 Project</text>
+  </g>
+
+  <!-- Main Grid Content -->
+  <!-- Left Panel: AI Disease Detection Diagnostic (EfficientNetB0) -->
+  <g transform="translate(45, 125)">
+    <rect width="360" height="335" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Card Header -->
+    <text x="18" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f1f5f9">AI Leaf Disease Detection</text>
+    <rect x="235" y="12" width="110" height="22" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.8"/>
+    <text x="290" y="27" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">94.62% Accuracy</text>
+
+    <!-- Leaf Scan Visual Box -->
+    <rect x="18" y="44" width="324" height="145" rx="10" fill="#0a0f1d" stroke="#1e293b"/>
+    <!-- Simulated Leaf & Detection Bounding Box -->
+    <path d="M120 160 C80 120, 90 70, 180 60 C270 70, 280 120, 240 160 C200 200, 140 190, 120 160 Z" fill="#065f46" opacity="0.6"/>
+    <path d="M180 60 L180 170" stroke="#34d399" stroke-width="1.5" opacity="0.7"/>
+    <!-- Veins -->
+    <path d="M180 90 L140 80 M180 110 L220 95 M180 130 L150 120 M180 145 L210 135" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+    
+    <!-- AI Scan Reticle -->
+    <rect x="135" y="75" width="90" height="70" rx="4" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <circle cx="135" cy="75" r="3" fill="#00f2fe"/>
+    <circle cx="225" cy="75" r="3" fill="#00f2fe"/>
+    <circle cx="135" cy="145" r="3" fill="#00f2fe"/>
+    <circle cx="225" cy="145" r="3" fill="#00f2fe"/>
+
+    <!-- Detection Result Overlay Tag -->
+    <rect x="140" y="82" width="80" height="18" rx="4" fill="#0f172a" opacity="0.85"/>
+    <text x="180" y="95" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#38bdf8" text-anchor="middle">Early Blight: 96%</text>
+
+    <!-- Model Stats -->
+    <text x="18" y="210" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">Model Architecture</text>
+    <text x="342" y="210" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="end">EfficientNetB0</text>
+
+    <!-- Progress Bar for Accuracy -->
+    <rect x="18" y="222" width="324" height="6" rx="3" fill="#1e293b"/>
+    <rect x="18" y="222" width="306" height="6" rx="3" fill="url(#primaryGrad)"/>
+
+    <!-- Recommended Treatment Box -->
+    <rect x="18" y="240" width="324" height="80" rx="8" fill="#131c31" stroke="#1e293b"/>
+    <text x="30" y="260" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#34d399">✓ Remedial Prescription Generated</text>
+    <text x="30" y="278" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Apply Copper Oxychloride 50% WP (2.5g/L).</text>
+    <text x="30" y="294" font-family="Inter, sans-serif" font-size="9.5" fill="#94a3b8">FastAPI Inference: 48ms • Spring Boot Gateway Verified</text>
+    <text x="30" y="308" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00f2fe">JWT Authenticated • Role: FARMER_VERIFIED</text>
+  </g>
+
+  <!-- Right Panel: Microservices Ecosystem & Modules -->
+  <!-- Top Right Card: Soil & Mandi Prices -->
+  <g transform="translate(420, 125)">
+    <rect width="335" height="158" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="26" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Soil &amp; Mandi Market Intelligence</text>
+    <text x="318" y="26" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981" text-anchor="end">LIVE FEED</text>
+
+    <!-- Soil Metric Pills -->
+    <rect x="16" y="38" width="94" height="42" rx="6" fill="#0c1322" stroke="#1e293b"/>
+    <text x="24" y="54" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Soil Nitrogen (N)</text>
+    <text x="24" y="72" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#34d399">142 kg/ha</text>
+
+    <rect x="120" y="38" width="94" height="42" rx="6" fill="#0c1322" stroke="#1e293b"/>
+    <text x="128" y="54" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Phosphorus (P)</text>
+    <text x="128" y="72" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#38bdf8">38 kg/ha</text>
+
+    <rect x="224" y="38" width="94" height="42" rx="6" fill="#0c1322" stroke="#1e293b"/>
+    <text x="232" y="54" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Potassium (K)</text>
+    <text x="232" y="72" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#f59e0b">195 kg/ha</text>
+
+    <!-- Mandi Live Rates Table snippet -->
+    <rect x="16" y="90" width="302" height="56" rx="6" fill="#0a0f1d"/>
+    <text x="26" y="108" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">Crop Mandi</text>
+    <text x="170" y="108" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">Rate / Quintal</text>
+    <text x="290" y="108" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="end">Trend</text>
+
+    <text x="26" y="126" font-family="Inter, sans-serif" font-size="10.5" fill="#e2e8f0">Wheat (Sharbati)</text>
+    <text x="170" y="126" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#f8fafc">₹2,480</text>
+    <text x="290" y="126" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#10b981" text-anchor="end">▲ +3.4%</text>
+
+    <text x="26" y="140" font-family="Inter, sans-serif" font-size="10.5" fill="#e2e8f0">Paddy (Basmati)</text>
+    <text x="170" y="140" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#f8fafc">₹3,850</text>
+    <text x="290" y="140" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="end">▲ +1.8%</text>
+  </g>
+
+  <!-- Bottom Right Card: Microservices Architecture & Weather/Gov Schemes -->
+  <g transform="translate(420, 295)">
+    <rect width="335" height="165" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="24" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Architecture &amp; Government Schemes</text>
+
+    <!-- Microservices Pipeline Badges -->
+    <g transform="translate(16, 36)">
+      <!-- Service 1 -->
+      <rect x="0" y="0" width="94" height="28" rx="6" fill="#131e36" stroke="#00f2fe" stroke-width="0.8"/>
+      <text x="47" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38bdf8" text-anchor="middle">API Gateway</text>
+
+      <line x1="94" y1="14" x2="104" y2="14" stroke="#64748b" stroke-width="1.5"/>
+
+      <!-- Service 2 -->
+      <rect x="104" y="0" width="94" height="28" rx="6" fill="#131e36" stroke="#10b981" stroke-width="0.8"/>
+      <text x="151" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#34d399" text-anchor="middle">Eureka Registry</text>
+
+      <line x1="198" y1="14" x2="208" y2="14" stroke="#64748b" stroke-width="1.5"/>
+
+      <!-- Service 3 -->
+      <rect x="208" y="0" width="94" height="28" rx="6" fill="#131e36" stroke="#f59e0b" stroke-width="0.8"/>
+      <text x="255" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#fbbf24" text-anchor="middle">FastAPI Model</text>
+    </g>
+
+    <!-- Government Scheme Active Alert -->
+    <rect x="16" y="74" width="302" height="42" rx="8" fill="#0d1b2a" stroke="#1e293b"/>
+    <text x="28" y="92" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#38bdf8">🏛️ PM Fasal Bima Yojana (PMFBY)</text>
+    <text x="28" y="106" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Subsidized Crop Insurance Portal integrated with Aadhaar &amp; KCC</text>
+
+    <!-- Weather Forecast Pill -->
+    <rect x="16" y="122" width="302" height="32" rx="6" fill="#0a0f1d"/>
+    <text x="26" y="142" font-family="Inter, sans-serif" font-size="10" fill="#e2e8f0">🌦️ Weather: <tspan font-weight="700" fill="#f8fafc">28°C, Moderate Rain Expected</tspan> (Humidity: 74%)</text>
+  </g>
+</svg>

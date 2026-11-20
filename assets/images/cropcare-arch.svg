@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="100%" stop-color="#0e172a"/>
+    </linearGradient>
+    <linearGradient id="gradEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="560" rx="16" fill="url(#archBg)"/>
+
+  <!-- Title & Banner -->
+  <text x="450" y="42" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#f8fafc" text-anchor="middle">CropCare AI • Distributed Microservices Architecture</text>
+  <text x="450" y="66" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8" text-anchor="middle">Engineered by Manjunathan S • Smart India Hackathon (SIH 2025)</text>
+
+  <!-- 1. Client Layer -->
+  <g transform="translate(40, 100)">
+    <rect width="180" height="420" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" filter="url(#boxShadow)"/>
+    <rect x="0" y="0" width="180" height="40" rx="12" fill="#1e293b"/>
+    <text x="90" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">CLIENT LAYER</text>
+
+    <!-- React App Box -->
+    <rect x="15" y="60" width="150" height="85" rx="8" fill="#131e36" stroke="#00f2fe" stroke-width="1"/>
+    <text x="90" y="88" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#f8fafc" text-anchor="middle">React.js Single Page App</text>
+    <text x="90" y="108" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">HTML5 • CSS3 • Modern JS</text>
+    <text x="90" y="126" font-family="Inter, sans-serif" font-size="9.5" fill="#34d399" text-anchor="middle">Farmers &amp; Officers Portal</text>
+
+    <!-- Client Modules -->
+    <rect x="15" y="165" width="150" height="45" rx="6" fill="#1e293b"/>
+    <text x="25" y="184" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#e2e8f0">🌱 Disease Camera Scan</text>
+    <text x="25" y="199" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Instant Leaf Photo Upload</text>
+
+    <rect x="15" y="225" width="150" height="45" rx="6" fill="#1e293b"/>
+    <text x="25" y="244" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#e2e8f0">🧪 Soil Advisory Panel</text>
+    <text x="25" y="259" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">NPK Crop Matching</text>
+
+    <rect x="15" y="285" width="150" height="45" rx="6" fill="#1e293b"/>
+    <text x="25" y="304" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#e2e8f0">📈 Mandi Rates &amp; Weather</text>
+    <text x="25" y="319" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Real-time Agricultural APIS</text>
+
+    <rect x="15" y="345" width="150" height="45" rx="6" fill="#1e293b"/>
+    <text x="25" y="364" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#e2e8f0">🏛️ Gov Schemes Hub</text>
+    <text x="25" y="379" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Subsidies &amp; Insurance</text>
+  </g>
+
+  <!-- Connection: Client to Gateway -->
+  <path d="M220 220 L270 220" stroke="#00f2fe" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="245" y="210" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">HTTPS</text>
+  <text x="245" y="235" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#94a3b8" text-anchor="middle">REST / JSON</text>
+
+  <!-- 2. Gateway & Registry Layer -->
+  <g transform="translate(270, 100)">
+    <rect width="180" height="420" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" filter="url(#boxShadow)"/>
+    <rect x="0" y="0" width="180" height="40" rx="12" fill="#1e293b"/>
+    <text x="90" y="25" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#10b981" text-anchor="middle">GATEWAY &amp; SECURITY</text>
+
+    <!-- Spring Cloud API Gateway -->
+    <rect x="15" y="55" width="150" height="95" rx="8" fill="#132420" stroke="#10b981" stroke-width="1.2"/>
+    <text x="90" y="80" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f8fafc" text-anchor="middle">Spring Cloud Gateway</text>
+    <text x="90" y="98" font-family="Inter, sans-serif" font-size="10" fill="#34d399" text-anchor="middle">Reverse Proxy &amp; Routing</text>
+    <text x="90" y="115" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#94a3b8" text-anchor="middle">JWT Validation (HMAC)</text>
+    <text x="90" y="132" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#fbbf24" text-anchor="middle">RBAC Authorization</text>
+
+    <!-- Netflix / Spring Eureka Service Registry -->
+    <rect x="15" y="175" width="150" height="85" rx="8" fill="#1c2518" stroke="#84cc16" stroke-width="1"/>
+    <text x="90" y="202" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f8fafc" text-anchor="middle">Eureka Service Discovery</text>
+    <text x="90" y="222" font-family="Inter, sans-serif" font-size="10" fill="#a3e635" text-anchor="middle">Heartbeat Healthchecks</text>
+    <text x="90" y="240" font-family="Inter, sans-serif" font-size="9.5" fill="#94a3b8" text-anchor="middle">Dynamic Load Balancing</text>
+
+    <!-- Security Auth Service -->
+    <rect x="15" y="285" width="150" height="110" rx="8" fill="#201a30" stroke="#a855f7" stroke-width="1"/>
+    <text x="90" y="310" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f8fafc" text-anchor="middle">Auth &amp; User Service</text>
+    <text x="90" y="330" font-family="Inter, sans-serif" font-size="10" fill="#c084fc" text-anchor="middle">Spring Security 6</text>
+    <text x="90" y="348" font-family="Inter, sans-serif" font-size="9.5" fill="#94a3b8" text-anchor="middle">Token Issuance &amp; Refresh</text>
+    <text x="90" y="366" font-family="'JetBrains Mono', monospace" font-size="9" fill="#e9d5ff" text-anchor="middle">Roles: Farmer, Expert, Admin</text>
+  </g>
+
+  <!-- Connectors from Gateway to Microservices -->
+  <path d="M450 160 L500 160" stroke="#10b981" stroke-width="2"/>
+  <path d="M450 250 L500 250" stroke="#10b981" stroke-width="2"/>
+  <path d="M450 350 L500 350" stroke="#10b981" stroke-width="2"/>
+  <path d="M450 440 L500 440" stroke="#10b981" stroke-width="2"/>
+
+  <!-- 3. Microservices Core Layer -->
+  <g transform="translate(500, 100)">
+    <rect width="200" height="420" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" filter="url(#boxShadow)"/>
+    <rect x="0" y="0" width="200" height="40" rx="12" fill="#1e293b"/>
+    <text x="100" y="25" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" text-anchor="middle">MICROSERVICES (JAVA 21)</text>
+
+    <!-- Microservice 1: AI Model Gateway / Crop Service -->
+    <rect x="15" y="55" width="170" height="80" rx="8" fill="#1a2030" stroke="#38bdf8" stroke-width="1"/>
+    <text x="100" y="78" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="middle">Crop Diagnosis Service</text>
+    <text x="100" y="96" font-family="Inter, sans-serif" font-size="9.5" fill="#38bdf8" text-anchor="middle">Spring Boot • Java 21</text>
+    <text x="100" y="114" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Dispatches to FastAPI DL Worker</text>
+
+    <!-- Microservice 2: Soil & Advisory Service -->
+    <rect x="15" y="148" width="170" height="75" rx="8" fill="#172224" stroke="#10b981" stroke-width="1"/>
+    <text x="100" y="172" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="middle">Soil &amp; Advisory Service</text>
+    <text x="100" y="190" font-family="Inter, sans-serif" font-size="9.5" fill="#34d399" text-anchor="middle">Spring Boot • Java 21</text>
+    <text x="100" y="206" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">NPK calculations &amp; treatments</text>
+
+    <!-- Microservice 3: Market & Weather Aggregator -->
+    <rect x="15" y="235" width="170" height="75" rx="8" fill="#241e17" stroke="#f97316" stroke-width="1"/>
+    <text x="100" y="258" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="middle">Mandi &amp; Weather Service</text>
+    <text x="100" y="276" font-family="Inter, sans-serif" font-size="9.5" fill="#fb923c" text-anchor="middle">Spring Boot • Java 21</text>
+    <text x="100" y="292" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">APIs Caching &amp; Live Feeds</text>
+
+    <!-- Microservice 4: Schemes & Welfare Service -->
+    <rect x="15" y="322" width="170" height="80" rx="8" fill="#21172a" stroke="#c084fc" stroke-width="1"/>
+    <text x="100" y="346" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="middle">Government Schemes Service</text>
+    <text x="100" y="364" font-family="Inter, sans-serif" font-size="9.5" fill="#c084fc" text-anchor="middle">Spring Boot • Java 21</text>
+    <text x="100" y="380" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">State &amp; National Scheme Index</text>
+  </g>
+
+  <!-- Connectors to Databases & AI Inference Worker -->
+  <path d="M700 160 L750 160" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M700 280 L750 280" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M700 420 L750 420" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- 4. Persistence & AI Worker Layer -->
+  <g transform="translate(740, 100)">
+    <rect width="130" height="420" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" filter="url(#boxShadow)"/>
+    <rect x="0" y="0" width="130" height="40" rx="12" fill="#1e293b"/>
+    <text x="65" y="25" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#c084fc" text-anchor="middle">AI &amp; DATA</text>
+
+    <!-- Python FastAPI + TensorFlow / EfficientNetB0 -->
+    <rect x="10" y="55" width="110" height="110" rx="8" fill="#1a1226" stroke="#e879f9" stroke-width="1.2"/>
+    <text x="65" y="78" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#f8fafc" text-anchor="middle">AI Worker</text>
+    <text x="65" y="96" font-family="Inter, sans-serif" font-size="9.5" fill="#f472b6" text-anchor="middle">Python FastAPI</text>
+    <text x="65" y="112" font-family="Inter, sans-serif" font-size="9.5" fill="#e879f9" text-anchor="middle">TensorFlow</text>
+    <rect x="18" y="122" width="94" height="22" rx="4" fill="#831843"/>
+    <text x="65" y="137" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#fbcfe8" text-anchor="middle">94.62% Acc</text>
+    <text x="65" y="156" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#fbcfe8" text-anchor="middle">EfficientNetB0</text>
+
+    <!-- Oracle Database -->
+    <rect x="10" y="185" width="110" height="95" rx="8" fill="#261717" stroke="#ef4444" stroke-width="1.2"/>
+    <text x="65" y="212" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="middle">Oracle DB</text>
+    <text x="65" y="232" font-family="Inter, sans-serif" font-size="9.5" fill="#fca5a5" text-anchor="middle">Relational Data</text>
+    <text x="65" y="248" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">User Accounts,</text>
+    <text x="65" y="262" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Auth, Schemes</text>
+
+    <!-- MongoDB Database -->
+    <rect x="10" y="300" width="110" height="95" rx="8" fill="#14241a" stroke="#10b981" stroke-width="1.2"/>
+    <text x="65" y="327" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="middle">MongoDB</text>
+    <text x="65" y="347" font-family="Inter, sans-serif" font-size="9.5" fill="#6ee7b7" text-anchor="middle">NoSQL Document</text>
+    <text x="65" y="363" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Diagnosis Logs,</text>
+    <text x="65" y="377" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Market Feed Cache</text>
+  </g>
+</svg>
